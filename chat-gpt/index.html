@@ -12,8 +12,8 @@
 
 <body>
     <div id="messages"></div>
-    <form id="form" action="">
-        <input id="input" autocomplete="off">
+    <form id="form" onkeydown="return event.key != 'Enter';" action="">
+        <textarea id="input" autocomplete="off"></textarea>
         <button onclick="sendmessge()" type="button">send</button>
     </form>
     <script src="js/style.js"></script>
