@@ -24,6 +24,7 @@ body {
 }
 
 #input {
+    word-spacing:normal;
     text-align: right;
     border: none;
     flex-grow: 1;
@@ -48,6 +49,7 @@ body {
 }
 
 #messages {
+    word-spacing:normal;
     font-family: "Vazir";
     list-style-type: none;
     padding: 10px;
