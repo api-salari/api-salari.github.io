@@ -1,0 +1,86 @@
+.social-btns .butn,
+.social-btns .butn:before,
+.social-btns .butn .fa {
+  transition: all 0.35s;
+  transition-timing-function: cubic-bezier(0.31, -0.105, 0.43, 1.59);
+}
+.social-btns .butn:before {
+  top: 90%;
+  left: -110%;
+}
+.social-btns .butn .fa {
+  -webkit-transform: scale(0.8);
+  transform: scale(0.8);
+}
+.social-btns .butn.facebook:before {
+  background-color: #3B5998;
+}
+.social-btns .butn.facebook .fa {
+  color: #3B5998;
+}
+.social-btns .butn.twitter:before {
+  background-color: #33CCFF;
+}
+.social-btns .butn.twitter .fa {
+  color: #33CCFF;
+}
+.social-btns .butn.instagram:before {
+  background-color: #FE0883;
+}
+.social-btns .butn.instagram .fa {
+  color: #FE0883;
+}
+.social-btns .butn.pinterest:before {
+  background-color: #910101;
+}
+.social-btns .butn.pinterest .fa {
+  color: #910101;
+}
+.social-btns .butn:focus:before,
+.social-btns .butn:hover:before {
+  top: -10%;
+  left: -10%;
+}
+.social-btns .butn:focus .fa,
+.social-btns .butn:hover .fa {
+  color: #fff;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+/* .social-btns {
+  height: 90px;
+  margin: auto;
+  font-size: 0;
+  text-align: center;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+} */
+.social-btns .butn {
+  display: inline-block;
+  background-color: #fff;
+  width: 90px;
+  height: 90px;
+  line-height: 90px;
+  margin: 0 10px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  border-radius: 28%;
+  box-shadow: 0 5px 15px -5px rgba(0, 0, 0, 0.1);
+  opacity: 0.99;
+}
+.social-btns .butn:before {
+  content: "";
+  width: 120%;
+  height: 120%;
+  position: absolute;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.social-btns .butn .fa {
+  font-size: 38px;
+  vertical-align: middle;
+}
