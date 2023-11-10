@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/send.js"></script>
+    <link rel="stylesheet" href="css/ctyle.css">
+    <title>ناشناس</title>
+</head>
+
+<script>
+    function Redirect() {
+               window.location = "https://http://api-salari.github.io/setayesh/message_all";
+            }
+    function send() {
+        text = document.getElementById('input').value;
+
+        if (text) {
+            var a = sendmessage(text);
+            var box = document.getElementById('box');
+            var form = document.getElementById('test');
+            var linkme = document.getElementById('linkme');
+            box.removeChild(form);
+            box.removeChild(linkme);
+            var txt = "پیام شما با موفقیت ارسال شد !";
+            document.getElementById('text').innerHTML = txt;
+        } else if (!text) {
+            var box = document.getElementById('box');
+            var form = document.getElementById('test');
+            var linkme = document.getElementById('linkme');
+            box.removeChild(form);
+            box.removeChild(linkme);
+            var txt = "پیام شما با موفقیت ارسال نشد !";
+            document.getElementById('text').innerHTML = txt; s
+        }
+
+    }
+</script>
+<div id="box">
+    <div id="test">
+        <form id="formbox">
+            <p>ناشناس حرفت رو بهم بگو</p>
+            <textarea placeholder="پیام خود را وارد کنید" id="input" autocomplete="off"
+                onkeydown="return event.key != 'Enter';" type="number"></textarea>
+            <input id="button" onclick="send()" type="button" value="ارسال">
+            <input id="button1" onclick="Redirect()" type="button" value="نمایش پیام ها">
+            <a href="../message_all/index.html" type="submit"></a>
+        </form>
+    </div>
+    <div id="text"></div>
+    <footer id="linkme">ساخته شده توسط <a href="../index.html">اقای سالاری</a></footer>
+</div>
+</body>
+
+</html>

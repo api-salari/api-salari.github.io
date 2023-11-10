@@ -1,0 +1,111 @@
+@font-face {
+    font-family: "vazir";
+    src: url(../fonts/Vazir-Regular.ttf);
+}
+
+body {
+    background: -webkit-linear-gradient(right, #0072ff, #00c6ff);
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#colo {
+    margin-bottom: 0;
+    margin-top: 10px;
+    height: 90px;
+    width: 90px;
+    border-radius: 50%;
+}
+
+#iduser{
+    font-size: 20px;
+    font-family: 'vazir';
+    padding-top: 50px;
+}
+
+#box {
+    margin-top: 10px;
+    text-align: center;
+    border-radius: 10px;
+    background-color: white;
+    padding: 60px;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin: 20px;
+    box-shadow: 0 15px 25px rgb(0, 0, 0, .5);
+}
+footer{
+    margin-top: 60px;
+    justify-content: center;
+    align-items: center;
+    color: rgba(0, 0, 0, 0.65);
+    font-size: 18px;
+    font-family: 'vazir';
+}
+#text {
+    padding-top: 20px;
+    font-size: 20px;
+    font-family: 'vazir';
+}
+
+#box p {
+    font-size: 20px;
+    font-family: 'vazir';
+    padding-bottom: 40px;
+
+}
+a{
+    text-decoration: none;
+    color: rgba(0, 0, 0, 5);
+    font-size: 18px;
+    font-family: 'vazir';
+}
+#button {
+    box-shadow: 0 15px 25px rgb(0, 0, 0, .1);
+    border-radius: 10px;
+    margin-top: 15px;
+    border: none;
+    padding: 15px 140px;
+    background: #57b846;
+    font-family: 'Vazir';
+    font-size: 19px;
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+}
+#button1 {
+    box-shadow: 0 15px 25px rgb(0, 0, 0, .1);
+    border-radius: 10px;
+    margin-top: 15px;
+    border: none;
+    padding: 13px 109px;
+    background: #57b846;
+    font-family: 'Vazir';
+    font-size: 19px;
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+}
+
+h3 {
+    background-color: #57b846;
+}
+
+#input {
+    min-height: 150px;
+    border-radius: 25px;
+    padding: 12px 30px;
+    margin: 0px;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    display: block;
+    width: 100%;
+    background: #e6e6e6;
+    font-family: 'Vazir';
+    font-size: 15px;
+    line-height: 1.5;
+    color: #666666;
+}
