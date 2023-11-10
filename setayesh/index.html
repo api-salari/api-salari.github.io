@@ -11,9 +11,6 @@
 </head>
 
 <script>
-    function Redirect() {
-               window.location = "https://api-salari.github.io/setayesh/message_all";
-            }
     function send() {
         text = document.getElementById('input').value;
 
@@ -45,8 +42,7 @@
             <textarea placeholder="پیام خود را وارد کنید" id="input" autocomplete="off"
                 onkeydown="return event.key != 'Enter';" type="number"></textarea>
             <input id="button" onclick="send()" type="button" value="ارسال">
-            <input id="button1" onclick="Redirect()" type="button" value="نمایش پیام ها">
-            <a href="../message_all/index.html" type="submit"></a>
+            <a href="./message_all/index.html" id="button1">نمایش پیام</a>
         </form>
     </div>
     <div id="text"></div>
