@@ -1,0 +1,229 @@
+<html lang="fa">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable = no"/>
+<title>unknown chat</title>
+<body>
+	<center>
+	<div class="fixed-header">
+		<div class="p">
+	<a style="position: absolute; right:10px;" href="http://Mr-Banana-2045.github.io/help.html"><Img SRC="help_2.svg"></a><p style="position: absolute; left:10px; top:-12px;">unknown chat</p>
+	</div>
+	</div>
+	</center>
+	<div class="mol">
+<table>
+  <tbody data-sheetdb-url="https://sheetdb.io/api/v1/zmtcjblvjcx0i"
+         data-sheetdb-sort-by="age"
+  data-sheetdb-sort-order="desc">
+    <tr class="td_cli">
+    	<TD class="td_nam">
+<Img class="Img" src="https://icons-for-free.com/iconfiles/png/512/alien+head+fantastic+green+mask+sci+fi+ufo+unknown+icon-1320196800484593484.png">
+</TD>
+      <td class="td_nam">unknown : {{id}}</td>
+    </tr>
+  </tbody>
+</table>
+<div id="message">sending...</div>
+</div>
+<form method="post" action="https://sheetdb.io/api/v1/rg2nc13r6scnv" id="sheetdb-form">
+<div id="emoji-container"></div>
+<div class="back">
+	<div class="ok">
+<Img onclick="on()" style="position: relative; top:5px;" SRC="aliens-icon.svg"><input type="text" placeholder="type message . . ." name="data[id]" id="text-editor"><button class="button" type="submit" onclick="showMessage()"><Img style="position: absolute; top:12px;" SRC="Send_Icon_039jcs.svg"></button>
+</div>
+</div>
+</form>
+<script>
+  var form = document.getElementById('sheetdb-form');
+  form.addEventListener("submit", e => {
+    e.preventDefault();
+    fetch(form.action, {
+        method : "POST",
+        body: new FormData(document.getElementById("sheetdb-form")),
+    }).then(
+        response => response.json()
+    ).then((html) => {
+      window.location.href = 'http://Mr-Banana-2045.github.io/app.html';
+    });
+  });
+</script>
+<script>
+	function showMessage() {
+            var messageDiv = document.getElementById("message");
+            messageDiv.style.display = "block";
+        }
+	</script>
+	<script>
+const emojiContainer = document.getElementById('emoji-container');
+const textEditor = document.getElementById('text-editor');
+
+function on(){
+const emojis = ['😃', '🥰', '😊', '😎', '😂', '🍌'];
+
+emojis.forEach((emoji) => {
+  const emojiElement = document.createElement('span');
+  emojiElement.innerHTML = emoji;
+  emojiElement.classList.add('emoji');
+  emojiElement.addEventListener('click', () => {
+    textEditor.value += emoji;
+  });
+  emojiContainer.appendChild(emojiElement);
+});
+}
+</script>
+<script src="https://sheetdb.io/handlebars.js"></script>
+<style>
+	.Img{
+		height: 20px;
+	}
+	body{
+		background: black;
+		font-family: Arial, Helvetica, sans-serif;
+		}
+		.mol{
+    height:670px;
+    overflow-y:scroll;
+			}
+			.mol::-webkit-scrollbar-track {
+background: nano;
+}
+.mol::-webkit-scrollbar {
+width: 5px;
+}
+.mol::-webkit-scrollbar-thumb {
+background: #488F00;
+}
+.mol::-webkit-scrollbar-thumb:hover {
+background: #488F00;
+}
+.mol::-webkit-scrollbar-button{
+background-color:#488F00;
+}
+		.back{
+			background: #488F00;
+			border-radius: 10px;
+			padding: 6px 0px 6px 0px;
+			position: fixed;
+			left:10;
+			right:10;
+			bottom:5;
+			}
+			.mainmenubtn {
+    border: none;
+    cursor: pointer;
+}
+.mainmenubtn:hover {
+    background-color: none;
+    }
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropdown-child {
+    display: none;
+    min-width: 130px;
+}
+.dropdown-child a {
+	border-radius: 10px;
+	border: 2px solid black;
+	color: black;
+	margin: 5px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+}
+.dropdown:hover .dropdown-child {
+    display: block;
+}
+		input{
+			border:none;
+			background: #488F00;
+			padding:5px;
+			position: relative;
+			top:-2px;
+			color: black;
+			font-size: 18px;
+			border-radius: 5px 0px 0px 5px;
+			outline: none;
+			}
+			input::placeholder {
+				color: black;
+				font-weight:300;
+				}
+			.button{
+				background:none;
+				outline: none;
+				border:none;
+				}
+				.but {
+					background:none;
+					border:none;
+					outline: none;
+					}
+				.fixed-header:nth-of-type(1){
+					position: relative;
+					font-weight: 500;
+					}
+		.p{
+			margin:0px 0px 2px 0px;
+			height:30px;
+			font-size:20px;
+			padding: 6px;
+			border-radius: 10px;
+			background: #4A9400;
+			color: black;
+			}
+				.td_cli{
+					margin:10px auto;
+					display: flex;
+					}
+					.td_nam{
+						border: 2px solid green;
+						border-radius: 10px;
+						padding: 5px 10px;
+						color: green;
+						float:left;
+						margin-left:5px;
+						}
+						#message {
+            font-size: 20px;
+            margin-top: 20px;
+            display: none;
+            color:white;
+            padding:5px;
+            border-radius:20px;
+            padding-top:5%;
+            font-size:25px;
+            font-weight:500;
+            padding-left:25%;
+            background: green;
+            position: fixed;
+            top:40%;
+            left:40px;
+            right:40px;
+            height:50px;
+        }
+        .ok{
+        	float:top;
+        margin-left:20px;
+        margin-right:20px;
+        padding:2px;
+        	border: 2px solid black;
+        border-radius:10px;
+        	}
+        #emoji-container {
+  display: flex;
+  cursor: pointer;
+  position: fixed;
+  bottom:63px;
+  left:10px;
+  background: #488F00;
+  font-size:25px;
+  border-radius:10px;
+}
+span{
+	padding:5px;
+	}
+	</style>
+    </html>
