@@ -1,6 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
+<script>
+        var images = [
+        "image1.jpg",
+        "image2.jpg",
+        "image3.jpg",
+        "image4.jpg",
+        "image5.jpg",
+        "image6.jpg",
+        "image7.jpg",
+        "image8.jpg",
+        "image9.jpg",
+        "image10.jpg",
+        "image11.jpg",
+        "image12.jpg",
+        "image13.jpg",
+        "image14.jpg",
+        "image15.jpg",
+        "image16.jpg",
+        "image17.jpg",
+        "image18.jpg"
 
+    ];
+    function getRandomImage() {
+        var index = Math.floor(Math.random() * images.length);
+        return images[index];
+    }
+    function changeBackground() {
+        var image = getRandomImage();
+        document.body.style.backgroundImage = "url('img/" + image + "')";
+    }
+    window.onload = changeBackground;
+</script>
 <head>
     <meta charset="UTF-8">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
