@@ -3,23 +3,57 @@
 
 <head>
     <meta charset="UTF-8">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="js/send.js"></script>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
     <link rel="stylesheet" href="css/ctyle.css">
     <title>ناشناس</title>
 </head>
 
+<script>
+    var images = [
+        "image1.jpg",
+        "image2.jpg",
+        "image3.jpg",
+        "image4.jpg",
+        "image5.jpg",
+        "image6.jpg",
+        "image7.jpg",
+        "image8.jpg",
+        "image9.jpg",
+        "image10.jpg",
+        "image11.jpg",
+        "image12.jpg",
+        "image13.jpg",
+        "image14.jpg",
+        "image15.jpg",
+        "image16.jpg",
+        "image17.jpg",
+        "image18.jpg"
+    ];
+    function getRandomImage() {
+        var index = Math.floor(Math.random() * images.length);
+        return images[index];
+    }
+    function changeBackground() {
+        var image = getRandomImage();
+        document.body.style.backgroundImage = "url('img/" + image + "')";
+    }
+    window.onload = changeBackground;
 </script>
-<div id="box">
-    <div id="test">
-        <form action="https://harfeto.timefriend.net/user/16989055446752" method="post" accept-charset="utf-8">
-            <input id="input" type="password" name="password" placeholder="رمز عبور خود را وارد نمایید">
-            <input type="submit" id="button" value="نمایش  پیام های دریافتی">
-        </form>
+
+<div id="boxs">
+    <div id="message"></div>
+    <div id="box">
+        <div id="text"></div>
+        <div id="test">
+            <form action="https://harfeto.timefriend.net/user/16989055446752" method="post" accept-charset="utf-8">
+                <input id="input" type="password" name="password" placeholder="رمز عبور خود را وارد نمایید">
+                <input type="submit" id="button" value="نمایش  پیام های دریافتی">
+            </form>
+        </div>
+        <footer id="linkme">ساخته شده توسط <a href="../index.html">اقای سالاری</a></footer>
     </div>
-    <div id="text"></div>
-    <footer id="linkme">ساخته شده توسط <a href="../index.html">اقای سالاری</a></footer>
 </div>
 </body>
 
