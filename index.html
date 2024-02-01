@@ -148,6 +148,7 @@
                     <script>
                         document.getElementById('form-msg').addEventListener("submit", function (event) {
                             var msg = document.getElementById("message").value;
+                            alert("loading ...");
                             var text_send = "💬 | #پیام_جدید \n متن پیام:\n " + String(msg);
                             $.ajax({
                                 type: 'post',
