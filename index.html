@@ -148,15 +148,19 @@
                     <script>
                         document.getElementById('form-msg').addEventListener("submit", function (event) {
                             var msg = document.getElementById("message").value;
-                            alert("loading ...");
+                            
                             var text_send = "💬 | #پیام_جدید \n متن پیام:\n " + String(msg);
+                            var rr = "post : " + msg
                             $.ajax({
                                 type: 'post',
                                 mode: "cors",
                                 cache: "no-cache",
                                 url: "https://api-salari.cyclic.app/send/message",
-                                data: {text: msg },
+                                data: {text: rr},
                             });
+                            alert(rr);
+                            $.get("https://api-salari.cyclic.app/send/message?text=تست");
+                            
 
                         })
                     </script>
