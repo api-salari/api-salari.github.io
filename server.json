@@ -1,0 +1,22 @@
+{
+    "status":200,
+    "message":"False",
+    "server":[
+        {
+            "name":"USA",
+            "url":"test.com"
+        }
+        {
+            "name":"IRAN",
+            "url":"test.com"
+        }
+        {
+            "name":"JAPON",
+            "url":"test.com"
+        }
+        {
+            "name":"ARAQ",
+            "url":"test.com"
+        }                
+    ]
+}
