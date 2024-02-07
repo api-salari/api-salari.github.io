@@ -1,26 +1,15 @@
 {
-    "test":"test",
-    "status":200,
+    "status":"200",
     "message":"False",
+    "name":"iran",
     "server":[
-        {
-            "name":"USA",
-            "url":"test.com"
-        }
-        {
-            "name":"IRAN",
-            "url":"test.com"
-        }
-        {
-            "name":"JAPON",
-            "url":"test.com"
-        }
-        {
-            "name":"ARAQ",
-            "url":"test.com"
-        }
+       {
+          "name":"iran",
+          "url":"shad.ir"
+       },      
+       {
+          "name":"iran",
+          "url":"shad.ir"
+       }
     ]
 }
-
-
-[Program finished]
