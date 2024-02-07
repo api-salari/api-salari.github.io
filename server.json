@@ -1,7 +1,8 @@
 {
-    status:200,
-    message:"False",
-    server:[
+    test:"test",
+    "status":200,
+    "message":"False",
+    "server":[
         {
             "name":"USA",
             "url":"test.com"
@@ -17,6 +18,9 @@
         {
             "name":"ARAQ",
             "url":"test.com"
-        }                
+        }
     ]
 }
+
+
+[Program finished]
