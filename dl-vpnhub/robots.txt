@@ -1,0 +1,2 @@
+rubika : @salari_info
+eitta : @salari_info
